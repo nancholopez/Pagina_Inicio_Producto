@@ -82,12 +82,10 @@ img {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: aquamarine;
     margin-top: 150px;
 }
 
-#inicio {
-    background-color: azure;
+#inicio, .productos {
     padding: 20px;
     max-width: 1300px;
 }
@@ -122,14 +120,12 @@ img {
 }
 
 .lista-ventajas ul {
-    background-color: #C669E6;
     padding-left: 4rem;
 }
 
 .lista-img-texto {
     display: flex;
     background-color: aliceblue;
-    border: 1px solid red;
     align-items: center;
     gap: 2rem;
 }
@@ -143,6 +139,79 @@ img {
     font-size: 60px;
 }
 
+#video{
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-productos {
+    padding: 20px;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.producto{
+    width: 350px;
+    box-shadow: 5px 5px 10px #AEC8FF
+}
+
+.titulo-producto{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.precio-producto{
+    text-align: center;
+}
+
+.producto ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.producto button{
+    background-color: rgb(241, 162, 13);
+    width: 50%;
+    margin: 10px 25%;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #e3dbe6;
+    width: 100%;
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 1rem;
+    padding: 10px 20px;
+}
+
+footer li{
+    width: 6%;
+    text-align: center;
+}
+
+footer li p{
+    padding: 0;
+}
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 20px;
+}
+
 @media (max-width: 928px) {
     #header {
         font-size: 1.1rem;
@@ -153,11 +222,14 @@ img {
         text-align: center;
         width: 100vw;
         min-width: 320px;
-        border: 1px solid black;
     }
 
     .lista-ventajas ul {
         padding: 1rem;
+    }
+
+    .lista-img-texto {
+        gap: 1rem;
     }
 }
 
@@ -186,29 +258,11 @@ img {
         margin-top: 160.8px;
     }
 
-    
-}
+    #video{
+        max-width: 90vw;  
+    }
 
-@media (max-width: 600px) {
-    /*#header{
-        flex-wrap: wrap;
-        height: 25%;
-        justify-content: center;
+    .producto{
+        max-width: 90vw;        
     }
-    .logo{
-        border: 1px solid red;
-        height: 40%;
-    }
-    #nav-bar{
-        border: 1px solid green;
-        justify-content: center;
-        padding-top: 0.2em;
-        height: 60%;
-    }
-    #nav-bar ul{
-        flex-direction: column;
-    }
-    .doc{
-        padding-top: 40vh;
-    }*/
 }
