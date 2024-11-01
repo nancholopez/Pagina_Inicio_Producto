@@ -194,12 +194,12 @@ footer ul{
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    gap: 1rem;
     padding: 10px 20px;
+    gap: 1rem;
 }
 
 footer li{
-    width: 6%;
+    width: 10%;
     text-align: center;
 }
 
@@ -230,6 +230,10 @@ footer li p{
 
     .lista-img-texto {
         gap: 1rem;
+    }
+
+    footer ul{
+        gap: 0.5rem;
     }
 }
 
@@ -264,5 +268,9 @@ footer li p{
 
     .producto{
         max-width: 90vw;        
+    }
+
+    footer li{
+        width: 25%;
     }
 }
